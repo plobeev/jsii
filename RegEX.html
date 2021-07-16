@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regExpressions</title>
+</head>
+
+<body>
+    <div class="inputText"></div>
+    <div class="alteredText"></div>
+</body>
+
+</html>
+
+
+<script>
+    let text = prompt('введите текст')
+    document.querySelector(".inputText").innerText = text;
+    console.log(text)
+    let alteredText = text.replace(/'/g, "''")
+    document.querySelector(".alteredText").innerText = alteredText;
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>eShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <button class="cart-button">Корзина</button>
+    </div>
+
+    <div class="cart-info">
+      <span class="quantity"></span>
+      <span class="sum"></span>
+    </div>
+  </header>
+  <div class="searchBar">
+    <fieldset>
+      <label for="searchBarInput"></label>
+      <input id="searchBarInput" value="" placeholder="Фильтр..." type="text">
+      <button class="search-button">Search</button>
+    </fieldset>
+  </div>
+  <main>
+    <div class="goods-list"></div>
+    <div class="goods-list-filtered"></div>
+    <div class="cart-goods-list"></div>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
