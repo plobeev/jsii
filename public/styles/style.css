@@ -19,13 +19,46 @@ main {
     flex-direction: column;
 }
 
-.cart-button {
+.forms {
+    display: block;
+    position: absolute;
+    box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: white;
+    top: 70px;
+}
+.forms,
+.forms fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 40px 10px;
+    text-align: center;
+}
+.forms fieldset input {
+    padding: 10px 20px;
+}
+.forms fieldset {
+    align-items: stretch;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.cart-button,
+.formShowHideBtn {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.2);
     cursor: pointer;
+    margin-right: 15px;
 }
 .cart-info {
     padding: 5px 20px;
@@ -36,7 +69,9 @@ main {
     gap: 30px;
 }
 
-.cart-button:hover {
+.cart-button:hover,
+.submitBtn:hover,
+.formShowHideBtn:hover {
     color: white;
     background-color: black;
 }
@@ -116,9 +151,7 @@ main {
     height: 60px;
     gap: 10px;
 }
-.hidden {
-    display: none;
-}
+
 .searchBar {
     display: flex;
     justify-content: center;
@@ -131,4 +164,12 @@ main {
 }
 .searchBar fieldset input {
     padding: 5px;
+}
+
+.error-in-form {
+    border: solid 2px red;
+}
+
+.hidden {
+    display: none;
 }

@@ -9,17 +9,17 @@
 </head>
 
 <body>
-    <div class="inputText"></div>
-    <div class="alteredText"></div>
+    <div class="inputText" style="font-size: 2em"></div><br>
+    <div class="alteredText" style="font-size: 2em"></div>
 </body>
 
 </html>
 
 
 <script>
-    let text = prompt('введите текст')
+    let text = " 'create' 'home' don't i'll mom's bart's 'Time' they've.'You' 'Share' 'Community'. "
     document.querySelector(".inputText").innerText = text;
     console.log(text)
-    let alteredText = text.replace(/'/g, "''")
+    let alteredText = text.replace(/(\'(?=[^lvst]))|(\'(?=[\w]{3,16}))/g, "''")
     document.querySelector(".alteredText").innerText = alteredText;
 </script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eShop</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+
+<body>
+  <header>
+    <div class="header-left">
+      <button class="cart-button">Корзина</button>
+      <button class="formShowHideBtn ">Форма</button>
+    </div>
+
+    <div class="cart-info">
+    </div>
+  </header>
+  <div class="searchBar">
+    <fieldset>
+      <label for="searchBarInput"></label>
+      <input id="searchBarInput" value="" placeholder="Фильтр..." type="text">
+      <button class="search-button">Search</button>
+    </fieldset>
+  </div>
+  <main>
+    <div class="goods-list"></div>
+    <div class="goods-list-filtered"></div>
+    <div class="cart-goods-list"></div>
+    <div class="forms hidden">
+      <fieldset>
+        <legend>Форма обратной связи</legend>
+        <label for="name">Имя</label>
+        <input class="formType" id="name" placeholder="Ваше имя" value="">
+        <label for="telephone">Телефон</label>
+        <input class="formType" id="telephone" placeholder="+7(000)000-0000" value="">
+        <label for="email">Email</label>
+        <input class="formType" id="email" placeholder="mymail@mail.ru" value="">
+        <label for="comments">Текст</label>
+        <textarea id="comments"></textarea>
+        <input type="submit" class="formCheckBtn" value="Отправить">
+      </fieldset>
+    </div>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

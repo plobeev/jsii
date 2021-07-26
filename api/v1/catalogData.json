@@ -1,0 +1,26 @@
+[
+    {
+      "id": 123,
+      "product_name": "Shirt",
+      "product_desc": "lorem",
+      "price": 25
+    },
+    {
+      "id": 456,
+      "product_name": "Shoes",
+      "product_desc": "lorem",
+      "price": 35
+    },
+    {
+      "id": 789,
+      "product_name": "Skirt",
+      "product_desc": "lorem",
+      "price": 45
+    },
+    {
+      "id": 999,
+      "product_name": "Glass",
+      "product_desc": "lorem",
+      "price": 55
+    }
+]
